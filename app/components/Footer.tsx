@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Image from 'next/image';
 import { useAtom } from 'jotai';
 import { themeAtom } from '../state/themeAtom';
@@ -7,7 +6,7 @@ import { LightTheme } from '@/app/themes';
 import { Content, FooterBottom, FooterContainer, Input, Links, Newsletter, Select, SelectContainer, SocialLinks } from "./Styled/Footer.styled"
 import { FaGlobe } from 'react-icons/fa6';
 
-const Footer = () => {
+const Footer:React.FC = () => {
     const [theme] = useAtom(themeAtom);
     const logoSrc = theme === LightTheme
         ? '/logos/logo-smartmoney-blue.png'

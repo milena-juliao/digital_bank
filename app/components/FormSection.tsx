@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { InputMask } from "@react-input/mask";
-import { FormWrapper, FormTitle, FormSubtitle, Form, RadioButtonsWrapper, RadioLabel, InputField, MaskedInputField, SubmitButton, Disclaimer, PrivacyLink, SecureMessage, ErrorMessage } from './Styled/FormSection.styled';
+import { FormWrapper, FormTitle, FormSubtitle, Form, RadioButtonsWrapper, RadioLabel, InputField, SubmitButton, Disclaimer, PrivacyLink, SecureMessage, ErrorMessage } from './Styled/FormSection.styled';
 import Image from "next/image";
 
 const FormSection: React.FC = () => {
