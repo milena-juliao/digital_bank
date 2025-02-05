@@ -1,5 +1,4 @@
 "use client"
-import { ReactNode } from "react";
 import { NextPage } from 'next';
 import ThemeWrapper from './components/ThemeWrapper';
 import Hero from './components/Hero';

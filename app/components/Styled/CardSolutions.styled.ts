@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-type AvatarProps = {
-  bgColor: string;
-};
-
 export const CardContainer = styled.div`
   position: absolute;
   bottom: 3rem;
