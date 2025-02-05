@@ -29,13 +29,9 @@ export const Divider = styled.div`
 
 export const Banner = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0px;
-  gap: 32px;
-  width: 100%;
-  max-width: 466px;
 
   @media (max-width: 768px) {
     width: 100%;

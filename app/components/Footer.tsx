@@ -45,7 +45,7 @@ const Footer = () => {
             </Content>
             <FooterBottom>
                 <Image src={logoSrc} alt='Logo Smart Money' width={150} height={50} />
-                <p>© 2022 SmartBusiness. Todos os direitos reservados</p>
+                <p>© 2022 SmartMoney. Todos os direitos reservados</p>
                 <SelectContainer>
                     <FaGlobe/>
                     <Select>

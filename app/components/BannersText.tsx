@@ -51,7 +51,7 @@ const BannersText: React.FC = () => {
                             <ButtonPrimary href="/" variant={b.buttonType} />
                         </TextSection>
                     </BannerItem>
-                    {index < bannerOptions.length - 1 && <Divider />}
+                    {index < bannerOptions.length - 1 && <Divider/>}
                 </Banner>
             ))}
         </Container>
