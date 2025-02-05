@@ -35,7 +35,7 @@ const Solutions: React.FC = () => {
                     ))}
                 </div>
 
-                <ButtonPrimary />
+                <ButtonPrimary href="/" variant={"primary"} />
 
                 <div>
                     <Image

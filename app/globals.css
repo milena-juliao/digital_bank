@@ -5,17 +5,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-body-20-regular: 20px;
-  --font-heading-72-regular: 72px;
-  --font-display-96-regular: 96px;
-  --font-body-18-regular: 18px;
-  --font-body-16-regular: 16px;
-  --font-heading-56-regular: 56px;
-  --font-body-14-regular: 14px;
-  --font-display-88-regular: 88px;
-  --font-heading-40-regular: 40px;
-  --font-heading-32-regular: 32px;
-  --font-heading-24-regular: 24px;
+  --font-20: 20px;
+  --font-72: 72px;
+  --font-96: 96px;
+  --font-18: 18px;
+  --font-16: 16px;
+  --font-56: 56px;
+  --font-14: 14px;
+  --font-88: 88px;
+  --font-40: 40px;
+  --font-32: 32px;
+  --font-24: 24px;
 
   /* color */
 
@@ -89,6 +89,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

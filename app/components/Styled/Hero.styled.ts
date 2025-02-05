@@ -30,7 +30,7 @@ export const ColumnStats = styled.div`
 `;
 
 export const StatTitle = styled.h2`
-  font-size: var(--font-body-14-regular);
+  font-size: var(--font-14);
   margin-bottom: 1.5rem;
   
   div{
@@ -56,19 +56,19 @@ export const StatTitle = styled.h2`
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: var(--font-heading-56-regular);
+  font-size: var(--font-56);
   font-weight: semi-bold;
   line-height: 4.3rem;
   margin-bottom: 1.5rem;
 
   @media (max-width: 1200px) {
-    font-size: var(--font-heading-32-semi);
+    font-size: var(--font-32-semi);
     line-height: 2.5rem;
   }
 `;
 
 export const HeroSubtitle = styled.p`
-  font-size: var(--font-body-18-regular);
+  font-size: var(--font-18);
   color: #ffff;
   line-height: 1.7rem;
 
@@ -107,7 +107,7 @@ export const StatCard = styled.div`
 `;
 
 export const StatValue = styled.h3`
-  font-size: var(--font-heading-40-regular);
+  font-size: var(--font-40);
   font-weight: bold;
 `;
 

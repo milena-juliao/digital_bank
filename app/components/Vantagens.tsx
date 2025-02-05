@@ -1,56 +1,61 @@
-import React from 'react';
-import { VantagensContainer, Section, VantagensHeader, Description, Bullet, BulletItem, ImageWrapper, Images } from './Styled/Vantagens.styled';
+import React, { useState } from 'react';
+import { 
+    VantagensContainer, 
+    Section, 
+    VantagensHeader, 
+    Description, 
+    ImageWrapper, 
+    Images, 
+    CardDescription, 
+    TitleCard, 
+    BarEffect 
+} from './Styled/Vantagens.styled';
 import Image from "next/image";
-import { FaEllipsis } from 'react-icons/fa6';
 import ButtonPrimary from './ButtonPrimary';
 
 const Vantagens: React.FC = () => {
-    const bulletOptions = [
-        "Sagittis sed cursus sed malesuada ultrices",
-        "Lectus ac at massa ac tellus fringilla aenean",
-        "Cras faucibus tristique volutpat accumsan"
-    ]
+
+    const [barActive, setBarActive] = useState(false);
 
     return (
         <VantagensContainer>
             <Section>
                 <VantagensHeader>
-                03 vantagens exclusivas da SmartMoney
+                    03 vantagens exclusivas da SmartMoney
                 </VantagensHeader>
-                <Description>
-                    Suscipit pellentesque praesent auctor molestie massa nunc vitae felis eget est ut gravida in maecenas.
-                    Tempus in in in congue proin.
-                </Description>
 
-                <div>
-                    {bulletOptions.map((b, index) => (
-                        <Bullet key={index}>
-                            <Image
-                                src={"/icons/check.svg"}
-                                alt={"ícone de check"}
-                                width={24}
-                                height={24}
-                            />
-                            <BulletItem>{b}</BulletItem>
-                        </Bullet>
-                    ))}
+                <CardDescription>
+                    <TitleCard color="#1E1C2D">Tecnologia de ponta</TitleCard>
+
+                    <Description color="#353345">
+                        Nullam neque, rutrum et enim diam, ligula fringilla aliquet tincidunt ullamcorper elit
+                    </Description>
+                    
+                    {/* Barra animada */}
+                    <BarEffect 
+                        onClick={() => setBarActive(!barActive)} 
+                        className={barActive ? "active" : ""}
+                    >
+                        <div></div>
+                    </BarEffect>
+                </CardDescription>
+
+                <div className='topicos'>
+                    <TitleCard color="#CBD6E2">Tecnologia de ponta</TitleCard>
+                    <Description color="#CBD6E2">
+                        Posuere sollicitudin semper in posuere habitant. Quis luctus et egestas viverra pellentesque.
+                    </Description>
                 </div>
-
-
-
-                <div>
-                    <Image
-                        src={"/icons/cellphone.svg"}
-                        alt={"ícone de celular"}
-                        width={13.33}
-                        height={20}
-                    />
-                    <BulletItem>Fale conosco</BulletItem>
+                <div className='topicos'>
+                    <TitleCard color="#CBD6E2">Suporte especializado</TitleCard>
+                    <Description color="#CBD6E2">
+                        Posuere sollicitudin semper in posuere habitant. Quis luctus et egestas viverra pellentesque.
+                    </Description>
                 </div>
             </Section>
 
             <ImageWrapper>
-                <ButtonPrimary />
+                <ButtonPrimary href="/" variant={"primary"} />
                 <Images>
                     <div>
                         <Image
@@ -58,27 +63,31 @@ const Vantagens: React.FC = () => {
                             alt={"Mulher usando celular"}
                             width={282}
                             height={402}
+                            layout="responsive"
                         />
 
                         <Image
                             src={"/icons/arrowLeft.png"}
-                            alt={"icone de seta apenas para estilização"}
+                            alt={"Ícone de seta"}
                             width={149}
                             height={55}
+                            layout="intrinsic"
                         />
                     </div>
                     <div>
                         <Image
                             src={"/icons/arrowRight.png"}
-                            alt={"icone de seta apenas para estilização"}
+                            alt={"Ícone de seta"}
                             width={149}
                             height={55}
+                            layout="intrinsic"
                         />
                         <Image
                             src={"/images/section_vantagens_etapas.png"}
                             alt={"Etapas"}
                             width={290}
                             height={450}
+                            layout="responsive"
                         />
                     </div>
                 </Images>

@@ -30,7 +30,7 @@ export const PostContent = styled.div`
 `;
 
 export const PostTitle = styled.h3`
-  font-size: var(--font-body-16-regular);
+  font-size: var(--font-16);
   font-weight: 400;
   color: #1e1c2d;
 `;

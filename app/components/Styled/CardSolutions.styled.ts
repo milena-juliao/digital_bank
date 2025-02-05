@@ -48,7 +48,7 @@ export const Price = styled.span`
   color: #2A2739;
 
   @media (max-width: 1200px) {
-    font-size: var(--font-body-14-regular);
+    font-size: var(--font-14);
   }
 `;
 

@@ -54,7 +54,7 @@ export const PostText = styled.div`
   p{
     margin-top: 2rem;
     strong{
-      font-size: var(--font-heading-24-regular);
+      font-size: var(--font-24);
     }
   }
 

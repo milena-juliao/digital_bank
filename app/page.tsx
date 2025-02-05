@@ -7,8 +7,9 @@ import Solutions from './components/Solutions';
 import Beneficios from "./components/Beneficios";
 import Blog from "./components/Blog";
 import Vantagens from "./components/Vantagens";
-// import FAQ from '../components/FAQ';
-// import Footer from '../components/Footer';
+import BannersText from "./components/BannersText";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 const Page: NextPage = () => {
 
@@ -20,8 +21,9 @@ const Page: NextPage = () => {
                 <Beneficios />
                 <Blog />
                 <Vantagens/>
-                {/*<FAQ />
-        <Footer /> */}
+                <BannersText/>
+                <FAQ/>
+                <Footer/>
             </main>
         </ThemeWrapper>
     );

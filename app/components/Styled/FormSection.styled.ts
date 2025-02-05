@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { InputMask } from "@react-input/mask";
 
 export const FormWrapper = styled.div`
   display: flex;
@@ -11,6 +12,26 @@ export const FormWrapper = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 30.5rem;
   margin-top: 2rem;
+
+  #cnpj, #phone{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #070514;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    &.error {
+      border: 1px solid red;
+    }
+  }
 
   @media (max-width: 1300px) {
     width: 40%;
@@ -25,14 +46,14 @@ export const FormWrapper = styled.div`
 
 export const FormTitle = styled.h2`
   width: 100%;
-  font-size: var(--font-body-14-semi);
+  font-size: var(--font-14-semi);
   color: #777;
   margin-bottom: .5rem;
 `;
 
 export const FormSubtitle = styled.p`
   width: 100%;
-  font-size: var(--font-body-18-semi);
+  font-size: var(--font-18-semi);
   font-weight: bold;
   color: #333;
   margin-bottom: 2rem;
@@ -78,10 +99,35 @@ export const InputField = styled.input`
   border-radius: 8px;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
+  color: #070514;
 
   &:focus {
     outline: none;
     border-color: #007bff;
+  }
+  
+  &.error {
+    border: 1px solid red;
+  }
+`;
+
+export const MaskedInputField = styled(InputMask)`
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #070514;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  &.error {
+    border: 1px solid red;
   }
 `;
 
@@ -122,14 +168,22 @@ export const SecureMessage = styled.div`
   color: #777;
   margin-top: 10px;
   
-  div{
+  div {
     display: flex;
     align-items: center;
     border-top: 3px solid var(--color-light-2);
     padding: 1.6rem 0 0 0;
 
     img {
-        margin-right: .5rem;
+      margin-right: 0.5rem;
     }
   }
+`;
+
+export const ErrorMessage = styled.span`
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
 `;
