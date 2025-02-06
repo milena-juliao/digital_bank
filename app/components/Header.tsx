@@ -1,7 +1,7 @@
 "use client";
 import { useAtom } from "jotai";
 import { themeAtom } from "../state/themeAtom";
-import HeaderWrapper, { Nav, NavLink, SignUpButton, MenuButton, MobileNav } from "./Styled/Header.styled";
+import { HeaderWrapper, Nav, NavLink, SignUpButton, MenuButton, MobileNav } from "./Styled/Header.styled";
 // import BtnSwitcherTheme from "../BtnSwitcherTheme/BtnSwitcherTheme";
 import Image from "next/image";
 import { LightTheme } from "@/app/themes";
