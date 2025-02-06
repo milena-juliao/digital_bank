@@ -159,16 +159,24 @@ export const FooterBottom = styled.div`
     }
 `;
 
-export const Input = styled.input`
+export const InputContainer = styled.div`
+    width: 100%;
+    background-color: #fff;
     padding: 0.8rem;
     font-size: 16px;
     border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 100%;
     margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+`;
+
+export const Input = styled.input`
+    padding: 0.8rem;
+    font-size: 16px;
+    width: 100%;
+
     &:focus {
         outline: none;
-        border-color: #1D63FF;
     }
 `;
 

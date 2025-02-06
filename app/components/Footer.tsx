@@ -3,10 +3,11 @@ import Image from 'next/image';
 import { useAtom } from 'jotai';
 import { themeAtom } from '../state/themeAtom';
 import { LightTheme } from '@/app/themes';
-import { Content, FooterBottom, FooterContainer, Input, Links, Newsletter, Select, SelectContainer, SocialLinks } from "./Styled/Footer.styled"
+import { Content, FooterBottom, FooterContainer, Input, InputContainer, Links, Newsletter, Select, SelectContainer, SocialLinks } from "./Styled/Footer.styled"
 import { FaGlobe } from 'react-icons/fa6';
+import ButtonPrimary from './ButtonPrimary';
 
-const Footer:React.FC = () => {
+const Footer: React.FC = () => {
     const [theme] = useAtom(themeAtom);
     const logoSrc = theme === LightTheme
         ? '/logos/logo-smartmoney-blue.png'
@@ -20,7 +21,11 @@ const Footer:React.FC = () => {
                         <Image src={'/icons/mail_fast.svg'} alt='Newsletter' width={30} height={30} />
                         <h3>Fique por dentro das novidades</h3>
                         <p>Cadastre seu e-mail para receber conteúdo</p>
-                        <Input type='email' placeholder='Digite seu e-mail' />
+
+                        <InputContainer>
+                            <Input type='email' placeholder='Digite seu e-mail' />
+                            <ButtonPrimary href='' variant="primary"/>
+                        </InputContainer>
                     </div>
                 </Newsletter>
                 <Links>
@@ -46,7 +51,7 @@ const Footer:React.FC = () => {
                 <Image src={logoSrc} alt='Logo Smart Money' width={150} height={50} />
                 <p>© 2022 SmartMoney. Todos os direitos reservados</p>
                 <SelectContainer>
-                    <FaGlobe/>
+                    <FaGlobe />
                     <Select>
                         <option value='pt-br'>Português</option>
                         <option value='en-us'>Inglês</option>
