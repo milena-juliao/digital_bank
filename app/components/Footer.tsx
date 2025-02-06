@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                         <p>Cadastre seu e-mail para receber conteúdo</p>
 
                         <InputContainer>
-                            <Input type='email' placeholder='Digite seu e-mail' />
+                            <Input type='email' placeholder='Insira seu melhor e-mail' />
                             <ButtonPrimary href='' variant="primary"/>
                         </InputContainer>
                     </div>

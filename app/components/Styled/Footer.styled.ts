@@ -29,7 +29,7 @@ export const Content = styled.div`
 export const Newsletter = styled.div`
     width: 50%;
     
-    div{
+    &>div{
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -162,18 +162,26 @@ export const FooterBottom = styled.div`
 export const InputContainer = styled.div`
     width: 100%;
     background-color: #fff;
-    padding: 0.8rem;
+    padding: 0.5rem 1.2rem;
     font-size: 16px;
     border-radius: 6px;
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
+
+    div{
+        width: 40%;
+        a{
+            padding: .5rem 1rem;
+            font-size: var(--font-14);
+        }
+    }
 `;
 
 export const Input = styled.input`
-    padding: 0.8rem;
     font-size: 16px;
-    width: 100%;
+    width: 80%;
+    color: #070514;
 
     &:focus {
         outline: none;

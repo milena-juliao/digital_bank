@@ -8,6 +8,7 @@ interface ButtonPrimaryProps {
 
 const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ variant = "primary", href }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const textBtn = variant === "outline" ? "Fale conosco" : "Quero ser cliente";
 
   return (
     <ButtonWrapper
@@ -15,7 +16,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ variant = "primary", href
       onMouseLeave={() => setIsHovered(false)}
     >
       <Button href={href} variant={variant}>
-        {variant === "outline" ? "Fale conosco" : "Quero ser cliente"}
+        {textBtn}
         {isHovered && <Circle />}
       </Button>
     </ButtonWrapper>
