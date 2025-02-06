@@ -4,10 +4,9 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5rem 7rem;
-  gap: 2rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -28,6 +27,7 @@ export const Divider = styled.div`
 `;
 
 export const Banner = styled.div`
+  width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,25 +5,25 @@ interface ColorProps {
 }
 
 export const VantagensContainer = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 1.7rem;
-  gap: 20px;
+  justify-content: center;
+  padding: 5rem 7rem;
+  gap: 5rem;
   background: #070514 center / cover no-repeat url("/backgrounds/bg_vantagens.png");
 
-  @media (min-width: 1200px) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5rem 7rem;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding: 5rem 1.7rem;
   }
 `;
 
 export const Section = styled.div`
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 
   .topicos {
@@ -31,9 +31,9 @@ export const Section = styled.div`
     margin: 0 auto;
   }
 
-  @media (min-width: 1200px) {
-    width: 40%;
-    align-items: flex-start;
+  @media (max-width: 900px) {
+    width: 100%;
+    align-items: center;
   }
 `;
 
@@ -55,47 +55,43 @@ export const Description = styled.p<ColorProps>`
   font-family: 'Archivo', sans-serif;
   font-size: 16px;
   color: ${(props) => props.color || "black"};
-  text-align: center;
-
-  @media (min-width: 1200px) {
-    font-size: 18px;
-    text-align: left;
-  }
+  text-align: start;
 `;
 
 export const ImageWrapper = styled.div`  
-  width: 75%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 
-  @media (min-width: 1200px) {
-    width: 60%;
-    align-items: flex-end;
-    gap: 4rem;
+  @media (max-width: 900px) {
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
   }
 `;
 
 export const Images = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   align-items: center;
+  justify-content: flex-end;
 
   div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
   }
 
-  @media (min-width: 1200px) {
-    flex-direction: row;
-
-    div:first-child {
-      align-items: flex-end;
-    }
+  @media (max-width: 700px) {
+    gap: .5rem;
   }
 `;
 
@@ -104,11 +100,6 @@ export const CardDescription = styled.div`
   border-radius: 6px;
   padding: 20px;
   text-align: center;
-
-  @media (min-width: 1200px) {
-    padding: 33px 34px;
-    text-align: left;
-  }
 `;
 
 export const TitleCard = styled.h2<ColorProps>`
@@ -116,10 +107,6 @@ export const TitleCard = styled.h2<ColorProps>`
   font-weight: 600;
   color: ${(props) => props.color || "black"};
   margin-bottom: 1rem;
-
-  @media (min-width: 1200px) {
-    font-size: 24px;
-  }
 `;
 
 export const BarEffect = styled.div`

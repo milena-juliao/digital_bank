@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const HeroWrapper = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5rem 7rem;
-  gap: 40px;
+  gap: 3rem;
   background: #070514 center / cover no-repeat url("/backgrounds/bg_hero.png");
 
   @media (max-width: 1200px) {

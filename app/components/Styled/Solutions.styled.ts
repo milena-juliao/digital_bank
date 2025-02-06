@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5rem 7rem;
-  gap: 40px;
+  gap:5rem;
   background: #fff;
   
   @media (max-width: 1200px) {

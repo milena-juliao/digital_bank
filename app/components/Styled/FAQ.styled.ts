@@ -3,25 +3,26 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #F2F5FC;
   padding: 5rem 7rem;
+  gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     padding: 4rem 0;
   }
 `;
 
 export const Infos = styled.div`
-  width: 411px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 16px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: 100%;
     padding: 0 1.7rem;
     align-items: center;
@@ -41,7 +42,7 @@ export const Title = styled.h1`
   font-weight: 600;
   color: #070514;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1320px) {
     font-size: var(--font-24);
   }
 `;
@@ -52,7 +53,7 @@ export const Description = styled.p`
   color: #413E52;
   margin-bottom: 3.75rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     font-size: var(--font-14);
     text-align: center;
     margin-bottom: 2.5rem;
@@ -81,11 +82,13 @@ export const IconText = styled.p`
 `;
 
 export const QuestionsContainer = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    width: 100%;
     gap: 0;
     padding: 0 1rem;
     margin-top: 3rem;
@@ -97,7 +100,7 @@ export const FAQItem = styled.div`
   flex-direction: column;
   gap: 8px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     gap: 0;
     border-bottom: 2px solid #CBD6E280;
 
@@ -108,8 +111,8 @@ export const FAQItem = styled.div`
 `;
 
 export const Question = styled.button`
-  width: 696px;
-  height: 112px;
+  width: 100%;
+  min-height: 5rem;
   background: #FFFFFF;
   box-shadow: 0px 15px 30px -10px rgba(76, 74, 94, 0.1);
   border-radius: 6px;
@@ -120,8 +123,7 @@ export const Question = styled.button`
   gap: 24px;
   font-family: 'Archivo';
   font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
+  font-size: var(--font-18);
   color: #0D0B1A;
   border: none;
   cursor: pointer;
@@ -131,11 +133,9 @@ export const Question = styled.button`
   }
 
   span {
-    width: 27px;
     font-size: 24px;
-    line-height: 125%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       font-size: var(--font-16);
     }
   }
@@ -144,8 +144,7 @@ export const Question = styled.button`
     outline: none;
   }
 
-  @media (max-width: 768px) {
-    Width: 100%;
+  @media (max-width: 900px) {
     height: auto;
     font-size: var(--font-14);
     border-radius: 0;
@@ -160,7 +159,7 @@ export const PlusIcon = styled.span`
 `;
 
 export const Answer = styled.div`
-  width: 696px;
+  width: 100%;
   padding: 12px 24px;
   font-family: 'Archivo';
   font-weight: 400;
@@ -170,7 +169,7 @@ export const Answer = styled.div`
   background-color: #fff;
   border-radius: 6px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     Width: 100%;
     border-radius: 0;
     font-size: var(--font-14);
