@@ -12,7 +12,7 @@ import {
     PostText,
     Navigation
 } from '../../components/Styled/BlogPost.styled';
-import { FaChevronLeft, FaHouse } from "react-icons/fa6";
+import { FaChevronLeft, FaCircle, FaHouse } from "react-icons/fa6";
 import Link from "next/link";
 
 interface BlogPostDetails {
@@ -79,8 +79,8 @@ const BlogPost: React.FC = () => {
                 <AuthorContainer>
                     <AuthorImage src={authorAvatar} alt={authorName} />
                     <AuthorName>
-                        Por 
-                        <span>{authorName}</span>
+                        Por {authorName}
+                        <FaCircle/>
                         {formatDate(post.date)}
                     </AuthorName>
                 </AuthorContainer>
