@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useAtom } from 'jotai';
 import { themeAtom } from '../state/themeAtom';
@@ -9,6 +10,14 @@ import ButtonPrimary from './ButtonPrimary';
 
 const Footer: React.FC = () => {
     const [theme] = useAtom(themeAtom);
+    const [hydrated, setHydrated] = useState(false);
+
+    useEffect(() => {
+        setHydrated(true);
+    }, []);
+
+    if (!hydrated) return null;
+
     const logoSrc = theme === LightTheme
         ? '/logos/logo-smartmoney-blue.png'
         : '/logos/logo-smartmoney-white.png';
@@ -24,7 +33,7 @@ const Footer: React.FC = () => {
 
                         <InputContainer>
                             <Input type='email' placeholder='Insira seu melhor e-mail' />
-                            <ButtonPrimary href='' variant="primary"/>
+                            <ButtonPrimary href='' variant="primary" />
                         </InputContainer>
                     </div>
                 </Newsletter>
@@ -48,7 +57,7 @@ const Footer: React.FC = () => {
                 </SocialLinks>
             </Content>
             <FooterBottom>
-                <Image src={logoSrc} alt='Logo Smart Money' width={150} height={50} />
+                {hydrated && <Image src={logoSrc} alt="Logo Smart Money" width={150} height={50} />}
                 <p>© 2022 SmartMoney. Todos os direitos reservados</p>
                 <SelectContainer>
                     <FaGlobe />
