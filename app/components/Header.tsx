@@ -5,11 +5,19 @@ import { HeaderWrapper, Nav, NavLink, SignUpButton, MenuButton, MobileNav } from
 // import BtnSwitcherTheme from "../BtnSwitcherTheme/BtnSwitcherTheme";
 import Image from "next/image";
 import { LightTheme } from "@/app/themes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header: React.FC = () => {
     const [theme] = useAtom(themeAtom);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [hydrated, setHydrated] = useState(false);
+
+    useEffect(() => {
+        setMobileMenuOpen(false);
+        setHydrated(true);
+    }, []);
+
+    if (!hydrated) return null;
 
     const logoSrc =
         theme === LightTheme
@@ -22,7 +30,7 @@ const Header: React.FC = () => {
 
     return (
         <HeaderWrapper>
-            <Image src={logoSrc} alt="Logo Smart Money" width={200} height={200} />
+            {hydrated && <Image src={logoSrc} alt="Logo Smart Money" width={200} height={200} />}
             <div>
                 <MenuButton onClick={toggleMobileMenu}>
                     ☰
@@ -33,7 +41,7 @@ const Header: React.FC = () => {
                     <NavLink href="#carreira">Carreira</NavLink>
                     <NavLink href="#contato">Contato</NavLink>
                     <NavLink href="#suporte">Suporte</NavLink>
-                    <SignUpButton theme={theme}>Cadastre-se</SignUpButton>
+                    <SignUpButton theme={hydrated ? theme : LightTheme}>Cadastre-se</SignUpButton>
                 </Nav>
                 {isMobileMenuOpen && (
                     <MobileNav>
@@ -42,7 +50,7 @@ const Header: React.FC = () => {
                         <NavLink href="#carreira">Carreira</NavLink>
                         <NavLink href="#contato">Contato</NavLink>
                         <NavLink href="#suporte">Suporte</NavLink>
-                        <SignUpButton theme={theme}>Cadastre-se</SignUpButton>
+                        <SignUpButton theme={hydrated ? theme : LightTheme}>Cadastre-se</SignUpButton>
                     </MobileNav>
                 )}
             </div>

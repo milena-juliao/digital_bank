@@ -162,7 +162,7 @@ export const FooterBottom = styled.div`
 export const InputContainer = styled.div`
     width: 100%;
     background-color: #fff;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1rem;
     font-size: 16px;
     border-radius: 6px;
     margin-top: 0.5rem;
