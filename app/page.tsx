@@ -8,7 +8,6 @@ import Blog from "./components/Blog";
 import Vantagens from "./components/Vantagens";
 import BannersText from "./components/BannersText";
 import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 
 const Page: NextPage = () => {
 
