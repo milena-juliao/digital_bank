@@ -12,11 +12,11 @@ export const HeaderWrapper = styled.header`
   padding: 1.7rem 7rem;
   background-color: #070514;
   color: #fff;
-  
+
   @media (max-width: 1200px) {
     padding: 1.7rem;
 
-    img{
+    img {
       width: 8rem;
     }
   }
@@ -26,7 +26,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   gap: 20px;
-  
+
   @media (max-width: 1200px) {
     display: none;
   }
@@ -50,7 +50,8 @@ export const SignUpButton = styled.button`
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
-  background-color: ${(props) => (props.theme === LightTheme ? "#007BFF" : "#fff")};
+  background-color: ${(props) =>
+    props.theme === LightTheme ? "#007BFF" : "#fff"};
   color: ${(props) => (props.theme === LightTheme ? "#fff" : "#000")};
 
   &:hover {

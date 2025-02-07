@@ -1,4 +1,4 @@
-"use client"
-import { atom } from 'jotai';
+"use client";
+import { atom } from "jotai";
 
 export const loadingAtom = atom<boolean>(false);

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -15,8 +15,8 @@ export const Container = styled.div`
 `;
 
 export const Divider = styled.div`
-  width: .2rem;
-  background-color: #CBD6E2;
+  width: 0.2rem;
+  background-color: #cbd6e2;
   height: 20rem;
   align-self: center;
   margin: 0 2rem;
@@ -58,7 +58,7 @@ export const TextSection = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -72,12 +72,12 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  color: #413E52;
+  color: #413e52;
   margin-bottom: 2rem;
 
   @media (max-width: 768px) {

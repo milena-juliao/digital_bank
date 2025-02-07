@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem 7rem;
-  gap:5rem;
+  gap: 5rem;
   background: #fff;
-  
+
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 20px;
@@ -36,7 +36,7 @@ export const Section = styled.div`
 `;
 
 export const SolutionsHeader = styled.h1`
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 600;
   font-size: 40px;
   line-height: 2.5rem;
@@ -50,7 +50,7 @@ export const SolutionsHeader = styled.h1`
 
 export const Description = styled.p`
   width: 75%;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 18px;
   color: #353345;
   line-height: 150%;
@@ -67,18 +67,16 @@ export const Bullet = styled.div`
   flex-direction: row;
   gap: 1rem;
   margin-bottom: 1.5rem;
-
-  
 `;
 
 export const BulletItem = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 16px;
-  color: #413E52;
-  
+  color: #413e52;
+
   @media (max-width: 1200px) {
     font-size: 14px;
   }
@@ -90,7 +88,7 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: url('/backgrounds/bg_image_solutions.png') no-repeat center center;
+  background: url("/backgrounds/bg_image_solutions.png") no-repeat center center;
   background-size: cover;
   border-radius: 6px;
   box-shadow: 0px 20px 30px -10px rgba(76, 74, 94, 0.15);
@@ -107,59 +105,53 @@ export const ImageWrapper = styled.div`
     right: 4rem;
   }
 
-@media (max-width: 1200px) {
-  width: 35%;
-  right: -20px;
+  @media (max-width: 1200px) {
+    width: 35%;
+    right: -20px;
 
-  .arrowUp {
-    width: 24px; 
-    height: 130px;
-    position: absolute;
-    bottom: 0%;
-    right: 12%; 
+    .arrowUp {
+      width: 24px;
+      height: 130px;
+      position: absolute;
+      bottom: 0%;
+      right: 12%;
+    }
   }
-}
 
-@media (max-width: 900px) {
-  width: 40%;
-  right: -27px;
+  @media (max-width: 900px) {
+    width: 40%;
+    right: -27px;
 
-  .arrowUp {
-    width: 20px;  
-    height: 120px; 
-    position: absolute;
-    bottom: 0%;
-    right: 16%; 
+    .arrowUp {
+      width: 20px;
+      height: 120px;
+      position: absolute;
+      bottom: 0%;
+      right: 16%;
+    }
   }
-}
 
-@media (max-width: 768px) {
-  width: 50%;
-  right: -35px
-
-  .arrowUp {
-    width: 18px; 
-    height: 110px;
-    position: absolute;
-    bottom: 0%;
-    right: 18%;
+  @media (max-width: 768px) {
+    width: 50%;
+    right: -35px .arrowUp {
+      width: 18px;
+      height: 110px;
+      position: absolute;
+      bottom: 0%;
+      right: 18%;
+    }
   }
-}
 
-@media (max-width: 480px) {
-  width: 75%;
-  right: -40px
-
-  .arrowUp {
-    width: 16px; 
-    height: 100px;
-    position: absolute;
-    bottom: 0%;
-    right: 22%;
+  @media (max-width: 480px) {
+    width: 75%;
+    right: -40px .arrowUp {
+      width: 16px;
+      height: 100px;
+      position: absolute;
+      bottom: 0%;
+      right: 22%;
+    }
   }
-}
-
-
 `;
 
 export const EllipsisDiv = styled.div`

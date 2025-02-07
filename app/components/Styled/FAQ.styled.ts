@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F2F5FC;
+  background-color: #f2f5fc;
   padding: 5rem 7rem;
   gap: 2rem;
 
@@ -30,14 +30,14 @@ export const Infos = styled.div`
 `;
 
 export const PreTitle = styled.h1`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 14px;
   font-weight: 600;
   color: #070514;
 `;
 
 export const Title = styled.h1`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 40px;
   font-weight: 600;
   color: #070514;
@@ -48,9 +48,9 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 16px;
-  color: #413E52;
+  color: #413e52;
   margin-bottom: 3.75rem;
 
   @media (max-width: 900px) {
@@ -68,17 +68,17 @@ export const IconTextContainer = styled.div`
 `;
 
 export const IconTitle = styled.p`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 18px;
   font-weight: 600;
-  color: #413E52;
-  margin-bottom: .25rem;
+  color: #413e52;
+  margin-bottom: 0.25rem;
 `;
 
 export const IconText = styled.p`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 14px;
-  color: #413E52;
+  color: #413e52;
 `;
 
 export const QuestionsContainer = styled.div`
@@ -102,9 +102,9 @@ export const FAQItem = styled.div`
 
   @media (max-width: 900px) {
     gap: 0;
-    border-bottom: 2px solid #CBD6E280;
+    border-bottom: 2px solid #cbd6e280;
 
-    &:last-child{
+    &:last-child {
       border: none;
     }
   }
@@ -113,7 +113,7 @@ export const FAQItem = styled.div`
 export const Question = styled.button`
   width: 100%;
   min-height: 5rem;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 15px 30px -10px rgba(76, 74, 94, 0.1);
   border-radius: 6px;
   display: flex;
@@ -121,15 +121,15 @@ export const Question = styled.button`
   justify-content: center;
   padding: 1rem 1.5rem;
   gap: 24px;
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-weight: 400;
   font-size: var(--font-18);
-  color: #0D0B1A;
+  color: #0d0b1a;
   border: none;
   cursor: pointer;
 
   span:first-child {
-    color: #1D63FF;
+    color: #1d63ff;
   }
 
   span {
@@ -161,7 +161,7 @@ export const PlusIcon = styled.span`
 export const Answer = styled.div`
   width: 100%;
   padding: 12px 24px;
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -170,7 +170,7 @@ export const Answer = styled.div`
   border-radius: 6px;
 
   @media (max-width: 900px) {
-    Width: 100%;
+    width: 100%;
     border-radius: 0;
     font-size: var(--font-14);
   }

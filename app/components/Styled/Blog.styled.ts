@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const BlogContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-light-1);
-    padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light-1);
+  padding: 5rem 7rem;
 
-    @media (max-width: 1200px) {
-        padding: 1.7rem;
-    }
+  @media (max-width: 1200px) {
+    padding: 1.7rem;
+  }
 `;
 
 export const HeaderContainer = styled.div`

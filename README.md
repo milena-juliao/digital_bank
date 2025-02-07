@@ -10,6 +10,7 @@ Este é um projeto onde foi criada uma **Landing Page para um banco digital** ut
 - **Framer Motion** para animações
 - **WordPress API** (REST) para consumo de dados dinâmicos
 - **Sanity CMS** para gerenciamento de conteúdo
+
 ```
 
 ## ✨ Funcionalidades Implementadas
@@ -24,7 +25,7 @@ Este é um projeto onde foi criada uma **Landing Page para um banco digital** ut
 
 ✅ **Animações** para uma melhor experiência do usuário
 
-   
+
 ## 🏗️ Melhorias Futuras
 
 🔹 Implementar testes unitários com **Jest e React Testing Library**
@@ -34,3 +35,4 @@ Este é um projeto onde foi criada uma **Landing Page para um banco digital** ut
 🔹 Implementar lazy loading para otimizar performance
 
 ## 🌍 Link do projeto na Vercel: https://digital-bank-xi.vercel.app/
+```

@@ -6,29 +6,24 @@ import { LightTheme, DarkTheme } from "../themes";
 import { ThemeProvider } from "styled-components";
 
 interface ThemeWrapperProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 const ThemeWrapper: React.FC<ThemeWrapperProps> = ({ children }) => {
-    const [theme] = useAtom(themeAtom);
-    const [mounted, setMounted] = useState(false);
+  const [theme] = useAtom(themeAtom);
+  const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if (!mounted) {
-        return null;
+  if (!mounted) {
+    return null;
+  }
 
-    }
+  const selectedTheme = theme === LightTheme ? LightTheme : DarkTheme;
 
-    const selectedTheme = theme === LightTheme ? LightTheme : DarkTheme;
-
-    return (
-        <ThemeProvider theme={selectedTheme}>
-            {children}
-        </ThemeProvider>
-    );
+  return <ThemeProvider theme={selectedTheme}>{children}</ThemeProvider>;
 };
 
 export default ThemeWrapper;

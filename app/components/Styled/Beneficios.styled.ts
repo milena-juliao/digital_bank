@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
   background-color: #fff;
   flex-wrap: wrap;
 
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     flex-direction: column;
     text-align: center;
     padding: 2rem 1.7rem;
@@ -19,25 +19,25 @@ export const CardContainer = styled.div`
 `;
 
 export const CardItem = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @media (max-width: 900px){
-        align-items: center;
-    }
+  @media (max-width: 900px) {
+    align-items: center;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 15.5rem;
   margin-top: 1rem;
 `;
 
 export const Title = styled.h2`
-  width: 100%;  
+  width: 100%;
   font-family: "Archivo", sans-serif;
   font-weight: 600;
   font-size: 24px;

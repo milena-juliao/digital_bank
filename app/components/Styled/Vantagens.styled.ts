@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface ColorProps {
   color?: string;
@@ -11,7 +11,8 @@ export const VantagensContainer = styled.div`
   justify-content: center;
   padding: 5rem 7rem;
   gap: 5rem;
-  background: #070514 center / cover no-repeat url("/backgrounds/bg_vantagens.png");
+  background: #070514 center / cover no-repeat
+    url("/backgrounds/bg_vantagens.png");
 
   @media (max-width: 1200px) {
     flex-direction: column;
@@ -38,7 +39,7 @@ export const Section = styled.div`
 `;
 
 export const VantagensHeader = styled.h1`
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 2.5rem;
@@ -52,13 +53,13 @@ export const VantagensHeader = styled.h1`
 `;
 
 export const Description = styled.p<ColorProps>`
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 16px;
   color: ${(props) => props.color || "black"};
   text-align: start;
 `;
 
-export const ImageWrapper = styled.div`  
+export const ImageWrapper = styled.div`
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -91,7 +92,7 @@ export const Images = styled.div`
   }
 
   @media (max-width: 700px) {
-    gap: .5rem;
+    gap: 0.5rem;
   }
 `;
 
@@ -111,20 +112,23 @@ export const TitleCard = styled.h2<ColorProps>`
 
 export const BarEffect = styled.div`
   width: 100%;
-  background-color: #CBD6E2;
+  background-color: #cbd6e2;
   border-radius: 10px;
   margin-top: 1rem;
   cursor: pointer;
 
   div {
     width: 30%;
-    height: .5rem;
+    height: 0.5rem;
     background-color: #007bff;
     border-radius: 10px;
-    transition: width 2s ease-in-out, background-color 0.3s ease-in-out;
+    transition:
+      width 2s ease-in-out,
+      background-color 0.3s ease-in-out;
   }
 
-  &:hover div, &.active div {
+  &:hover div,
+  &.active div {
     width: 100%;
     background-color: #0056b3;
   }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
   display: flex;
@@ -11,7 +11,8 @@ export const HeroWrapper = styled.section`
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 20px;
-    background: #070514 center / cover no-repeat url("/backgrounds/bg_hero_mobile.png");
+    background: #070514 center / cover no-repeat
+      url("/backgrounds/bg_hero_mobile.png");
     padding: 1.7rem;
   }
 `;
@@ -32,27 +33,27 @@ export const ColumnStats = styled.div`
 export const StatTitle = styled.h2`
   font-size: var(--font-14);
   margin-bottom: 1.5rem;
-  
-  div{
+
+  div {
     width: 11.25rem;
     display: flex;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 5rem;
     border: 4px solid var(--color-blue-4);
 
     img {
-        margin-right: .5rem
+      margin-right: 0.5rem;
     }
 
     @media (max-width: 1200px) {
-        justify-content: center;
+      justify-content: center;
     }
-    }
+  }
 
-    @media (max-width: 1200px) {
-        display: flex;
-        justify-content: center;
-    }
+  @media (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const HeroTitle = styled.h1`

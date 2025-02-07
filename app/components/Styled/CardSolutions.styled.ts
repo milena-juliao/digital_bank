@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   position: absolute;
@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
   align-items: flex-start;
   padding: 24px 15px 24px 24px;
   gap: 10px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 8px 30px 12px rgba(76, 74, 94, 0.15);
   border-radius: 6px;
 
@@ -24,8 +24,8 @@ export const CardContainer = styled.div`
     width: 10rem;
     bottom: 1rem;
     left: -2rem;
-    padding: .5rem;
-    gap: .5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
 `;
 
@@ -37,11 +37,11 @@ export const Demonstration = styled.span`
 `;
 
 export const Price = styled.span`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  color: #2A2739;
+  color: #2a2739;
 
   @media (max-width: 1200px) {
     font-size: var(--font-14);
@@ -49,11 +49,11 @@ export const Price = styled.span`
 `;
 
 export const Title = styled.span`
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #4C4A5E;
+  color: #4c4a5e;
 
   @media (max-width: 1200px) {
     font-size: 16px;
@@ -67,7 +67,7 @@ export const Title = styled.span`
 export const Divider = styled.div`
   width: 100%;
   height: 3px;
-  background: #CBD6E2;
+  background: #cbd6e2;
   opacity: 0.4;
 `;
 

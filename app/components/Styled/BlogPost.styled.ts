@@ -15,7 +15,8 @@ export const Navigation = styled.div`
   gap: 5rem;
   margin-top: 5rem;
 
-  div {
+  div,
+  a {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -23,7 +24,7 @@ export const Navigation = styled.div`
     p {
       color: var(--color-blue-1);
 
-      @media(max-width: 768px){
+      @media (max-width: 768px) {
         width: 200px;
         white-space: nowrap;
         overflow: hidden;
@@ -93,7 +94,6 @@ export const PostText = styled.div`
         font-size: var(--font-18);
       }
     }
-
   }
 
   figure {
@@ -131,7 +131,7 @@ export const AuthorContainer = styled.div`
 export const AuthorImage = styled.img`
   width: 50px;
   height: 50px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-right: 10px;
 
   @media (max-width: 768px) {
@@ -145,10 +145,10 @@ export const AuthorName = styled.p`
   color: #000;
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: 0.6rem;
 
-  svg{
-    width: .5rem;
+  svg {
+    width: 0.5rem;
     color: var(--color-blue-1);
   }
 

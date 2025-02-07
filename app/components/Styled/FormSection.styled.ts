@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { InputMask } from "@react-input/mask";
 
 export const FormWrapper = styled.div`
@@ -13,7 +13,8 @@ export const FormWrapper = styled.div`
   width: 30.5rem;
   margin-top: 2rem;
 
-  #cnpj, #phone{
+  #cnpj,
+  #phone {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -48,7 +49,7 @@ export const FormTitle = styled.h2`
   width: 100%;
   font-size: var(--font-14-semi);
   color: #777;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const FormSubtitle = styled.p`
@@ -87,7 +88,7 @@ export const RadioLabel = styled.label`
   }
 
   @media (max-width: 1200px) {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -105,7 +106,7 @@ export const InputField = styled.input`
     outline: none;
     border-color: #007bff;
   }
-  
+
   &.error {
     border: 1px solid red;
   }
@@ -125,7 +126,7 @@ export const MaskedInputField = styled(InputMask)`
     outline: none;
     border-color: #007bff;
   }
-  
+
   &.error {
     border: 1px solid red;
   }
@@ -167,7 +168,7 @@ export const SecureMessage = styled.div`
   font-size: 0.8rem;
   color: #777;
   margin-top: 10px;
-  
+
   div {
     display: flex;
     align-items: center;

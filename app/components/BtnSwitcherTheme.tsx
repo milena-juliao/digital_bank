@@ -12,9 +12,7 @@ const BtnSwitcherTheme: React.FC = () => {
   };
 
   return (
-    <button onClick={toggleTheme}>
-      {theme === LightTheme ? "🌙" : "☀️"}
-    </button>
+    <button onClick={toggleTheme}>{theme === LightTheme ? "🌙" : "☀️"}</button>
   );
 };
 

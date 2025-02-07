@@ -6,7 +6,10 @@ interface ButtonPrimaryProps {
   href: string;
 }
 
-const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ variant = "primary", href }) => {
+const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
+  variant = "primary",
+  href,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   const textBtn = variant === "outline" ? "Fale conosco" : "Quero ser cliente";
 
